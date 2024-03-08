@@ -80,47 +80,70 @@
     <section class="section-center">
       <details open class="register">
         <summary>01. Shipping Adress</summary>
-        <form class="guest-register">
-          <h3 class="register_h3">Check as a guest or register</h3>
-          <p class="register_p">
-            Register with us for future convenience
-          </p>
-          <div class="radio">
-            <input type="radio" value="1" id="guest" name="contact" />
-            <label for="guest">checkout as guest</label>
-            <input
-              type="radio"
-              value="2"
-              id="register"
-              name="contact"
-            />
-            <label for="register">register</label>
-          </div>
-          <h3 class="register_h3">register and save time!</h3>
-          <p class="register_p">
-            Register with us for future convenience
-          </p>
-          <a href="#" id="checkout-register"
-            >>> Fast and easy checkout</a
-          >
-          <a href="#" id="access-history"
-            >>> Easy access to your order history and status</a
-          >
-          <div class="button-register">continue</div>
-        </form>
-        <form class="ready-registed">
-          <h3 class="register_h3">Already registed?</h3>
-          <p class="register_p">Please log in below</p>
-          <h4 class="register_h4">EMAIL ADDRESS<span>*</span></h4>
-          <input type="email" name="email" id="email" />
-          <h4 class="register_h4">PASSWORD<span>*</span></h4>
-          <input type="password" name="password" id="password" />
-          <p class="error-text">* Required Fileds</p>
-          <div class="login-end">
-            <div class="button-register">Log in</div>
-            <a id="password-recovery" href="#">Forgot Password ?</a>
-          </div>
-        </form>
+        <div class="details-content">
+          <form class="guest-register">
+            <h3 class="register_h3">Check as a guest or register</h3>
+            <p class="register_p">
+              Register with us for future convenience
+            </p>
+            <div class="radio">
+              <div class="radio-box">
+                <input
+                  type="radio"
+                  value="1"
+                  id="guest"
+                  name="contact"
+                />
+                <label for="guest">checkout as guest</label>
+              </div>
+              <div class="radio-box">
+                <input
+                  type="radio"
+                  value="2"
+                  id="register"
+                  name="contact"
+                />
+                <label for="register-save">register</label>
+              </div>
+            </div>
+            <h3 class="register_h3">register and save time!</h3>
+            <p class="register_p">
+              Register with us for future convenience
+            </p>
+            <div class="link-box">
+              <a href="#" id="checkout-register"
+                ><img
+                  class="double-arrow"
+                  src="./images/forms/double-arrow.svg"
+                  alt="arrow"
+                />
+                Fast and easy checkout</a
+              >
+              <a href="#" id="access-history"
+                ><img
+                  class="double-arrow"
+                  src="./images/forms/double-arrow.svg"
+                  alt="arrow"
+                />
+                Easy access to your order history and status</a
+              >
+            </div>
+            <div class="button-register">continue</div>
+          </form>
+          <form class="ready-registed">
+            <h3 class="register_h3">Already registed?</h3>
+            <p class="register_p">Please log in below</p>
+            <h4 class="register_h4">EMAIL ADDRESS<span>*</span></h4>
+            <input type="email" name="email" id="email" />
+            <h4 class="register_h4">PASSWORD<span>*</span></h4>
+            <input type="password" name="password" id="password" />
+            <p class="error-text">* Required Fileds</p>
+            <div class="login-end">
+              <div class="button-register">Log in</div>
+              <a id="password-recovery" href="#">Forgot Password ?</a>
+            </div>
+          </form>
+        </div>
       </details>
       <details class="billing-information">
         <summary>02. BILLING INFORMATION</summary>
@@ -227,38 +250,36 @@
           wireless technologies. Dynamically optimize.
         </p>
       </div>
-      <nav class="section-info__type">
-        <div class="section-info__type-list company">
-          <h3>COMPANY</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="section-info__type-list information">
-          <h3>INFORMATION</h3>
-          <ul>
-            <li><a href="#">Tearms & Condition</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">How to Buy</a></li>
-            <li><a href="#">How to Sell</a></li>
-            <li><a href="#">Promotion</a></li>
-          </ul>
-        </div>
-        <div class="section-info__type-list shop-category">
-          <h3>SHOP CATEGORY</h3>
-          <ul>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Child</a></li>
-            <li><a href="#">Apparel</a></li>
-            <li><a href="#">Brows All</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="info-links company">
+        <h3>COMPANY</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="info-links information">
+        <h3>INFORMATION</h3>
+        <ul>
+          <li><a href="#">Tearms & Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">How to Buy</a></li>
+          <li><a href="#">How to Sell</a></li>
+          <li><a href="#">Promotion</a></li>
+        </ul>
+      </div>
+      <div class="info-links shop-category">
+        <h3>SHOP CATEGORY</h3>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Child</a></li>
+          <li><a href="#">Apparel</a></li>
+          <li><a href="#">Brows All</a></li>
+        </ul>
+      </div>
     </section>
     <footer>
       <p>© 2022 Brand All Rights Reserved.</p>

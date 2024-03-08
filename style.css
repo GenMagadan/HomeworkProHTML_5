@@ -342,23 +342,25 @@
 
 .section-info {
   padding: 123px 230px 89px;
+  display: grid;
+  grid-template-columns: 490px repeat(3, 1fr);
   background-color: #ffffff;
-  display: flex;
-  gap: 64px;
+  box-sizing: border-box;
 }
-.section-info .announced {
+
+.announced {
   min-width: 427px;
 }
-.section-info .announced__brand {
+.announced__brand {
   display: flex;
   align-items: center;
   gap: 13px;
 }
-.section-info .announced__brand img {
+.announced__brand img {
   width: 59px;
   height: 51px;
 }
-.section-info .announced__brand-text {
+.announced__brand-text {
   font-family: Lato, sans-serif;
   font-size: 27px;
   line-height: 32px;
@@ -367,7 +369,7 @@
   text-transform: uppercase;
   color: #222222;
 }
-.section-info .announced__brand-text span {
+.announced__brand-text span {
   font-family: Lato, sans-serif;
   font-size: 27px;
   line-height: 32px;
@@ -376,7 +378,8 @@
   text-transform: uppercase;
   color: #f16d7f;
 }
-.section-info .announced__text {
+.announced__text {
+  width: 426px;
   font-family: Lato, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -385,10 +388,8 @@
   color: #898989;
   padding-top: 29px;
 }
-.section-info__type {
-  display: flex;
-}
-.section-info__type-list h3 {
+
+.info-links h3 {
   font-family: Lato, sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -399,10 +400,10 @@
   padding-bottom: 42px;
   white-space: nowrap;
 }
-.section-info__type-list li {
+.info-links li {
   list-style-type: none;
 }
-.section-info__type-list li a {
+.info-links li a {
   font-family: Lato, sans-serif;
   font-size: 16px;
   line-height: 42px;
@@ -475,9 +476,16 @@ body {
 
 details {
   transition: 0.5s;
-  display: flex;
   box-sizing: border-box;
   border-bottom: 1px solid #e8e8e8;
+}
+details .details-content {
+  display: flex;
+  padding-left: 35px;
+  padding-bottom: 79px;
+}
+details .details-content .guest-register {
+  width: 584px;
 }
 details summary {
   display: flex;
@@ -490,23 +498,141 @@ details summary {
   text-transform: uppercase;
   color: #222222;
 }
-details a {
+details .register_p {
   font-family: Lato, sans-serif;
-  font-size: 14px;
-  line-height: 33px;
+  font-size: 13px;
+  line-height: 20px;
   font-weight: 400;
-  color: #6f6e6e;
-  padding-left: 19px;
+  color: #b3b2b2;
+  padding-bottom: 34px;
+}
+details .register_h3 {
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+  padding-bottom: 13px;
+}
+details .radio {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 33px;
+  gap: 20px;
+}
+details .radio-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+details .radio label {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+}
+details .link-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 38px;
+}
+details .link-box a {
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
   text-decoration: none;
 }
-details a:hover {
-  color: #ef5b70;
+details .link-box a .double-arrow {
+  width: 12px;
+  line-height: 20px;
+  filter: brightness(0) saturate(100%) invert(75%) sepia(4%) saturate(3%) hue-rotate(323deg) brightness(99%) contrast(82%);
+}
+details .button-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #6f6e6e;
+}
+details .button-register:hover {
+  box-shadow: 0px 0px 5px 0px #f16d7f;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #f16d7f;
 }
 details .lorem {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
   color: #b3b2b2;
   padding-bottom: 30px;
+  padding-inline: 35px;
+}
+details .register_h4 {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #222222;
+  padding-bottom: 16px;
+}
+details .register_h4 span {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ff0d0d;
+}
+details .error-text {
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #ff0d0d;
+  padding-bottom: 29px;
+}
+details .login-end {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+details .login-end a {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #222222;
+  text-decoration: none;
+}
+details #password,
+details #email {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+details #password:focus,
+details #email:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px #f16d7f;
+  border: 1px solid #f16d7f;
+  border-radius: 0;
 }/*# sourceMappingURL=style.css.map */
