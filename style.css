@@ -469,317 +469,44 @@ body {
 
 .section-center {
   background-color: #ffffff;
-}
-
-.products-details {
-  padding: 67px 230px 44px;
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
-}
-.products-details__name {
-  display: grid;
-  grid-template-columns: 500px repeat(4, 1fr) 0.4fr;
-  border-bottom: 1px solid #ebebeb;
-}
-.products-details__name .name-option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: 700;
-  letter-spacing: -0.015em;
-  text-transform: uppercase;
-  color: #222224;
-  padding-block: 20px;
-}
-.products-details__name .name-option:first-child {
-  display: flex;
-  justify-content: start;
-}
-.products-details__content {
-  display: grid;
-  grid-template-columns: 500px repeat(4, 1fr) 0.4fr;
-  padding-block: 22px 25px;
-  border-bottom: 1px solid #ebebeb;
-}
-.products-details__content .product-card {
-  display: flex;
-  gap: 21px;
-}
-.products-details__content .product-card .product-card-img {
-  width: 100px;
-  height: 115px;
-}
-.products-details__content .product-card_descriptions {
-  display: flex;
-  flex-direction: column;
-  padding-top: 13px;
-}
-.products-details__content .product-card_descriptions .name-cardProduct {
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 1.2;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #222224;
-  padding-bottom: 38px;
-}
-.products-details__content .product-card_descriptions .color-cardProduct,
-.products-details__content .product-card_descriptions .size-cardProduct {
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 600;
-  color: #575757;
-}
-.products-details__content .product-card_descriptions .color-cardProduct span,
-.products-details__content .product-card_descriptions .size-cardProduct span {
-  font-weight: 400;
-  color: #6f6e6e;
-  padding-left: 7px;
-}
-.products-details__content .card-option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #575757;
-}
-.products-details__content .card-option .quant {
-  width: 54px;
-  height: 30px;
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-  text-align: center;
-}
-.products-details__content .card-option .quant::-moz-placeholder {
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #6f6e6e;
-}
-.products-details__content .card-option .quant::placeholder {
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #6f6e6e;
-}
-.products-details__content .card-option .quant:focus {
-  outline: none;
-  box-shadow: 0px 0px 3px #f16d7f;
-  border: 1px solid #f16d7f;
-  border-radius: 0;
-}
-.products-details__content .card-option .circle-xmark {
-  filter: brightness(0) saturate(100%) invert(86%) sepia(8%) saturate(24%) hue-rotate(314deg) brightness(91%) contrast(85%);
-}
-.products-details__content .card-option .circle-xmark:hover {
-  cursor: pointer;
-}
-
-.options-shopping {
   padding-inline: 230px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-.options-shopping .button-chopping {
-  width: 235px;
-  height: 50px;
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Lato, sans-serif;
-  font-size: 14px;
-  line-height: 1.2;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #575757;
-}
-.options-shopping .button-chopping:hover {
-  color: #fbfbfb;
-  background-color: #ef5b70;
-  cursor: pointer;
+  padding-block: 89px 125px;
 }
 
-.making-purchases {
-  padding: 63px 230px 79px;
+details {
+  transition: 0.5s;
   display: flex;
-  gap: 35px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e8e8e8;
 }
-.making-purchases .delivery-address {
-  width: calc((100% - 70px) / 3);
+details summary {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.making-purchases .delivery-address .shipping-adress {
+  padding-block: 30px;
   font-family: Lato, sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 800;
+  letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: #222222;
 }
-.making-purchases .delivery-address .sity-select {
-  height: 45px;
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-  padding-inline: 18px 12px;
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 1.2;
-  font-weight: 400;
-  color: #9f9f9f;
-}
-.making-purchases .delivery-address .sity-select:focus {
-  outline: none;
-  box-shadow: 0px 0px 3px #f16d7f;
-  border: 1px solid #f16d7f;
-  border-radius: 0;
-}
-.making-purchases .coupon {
-  width: calc((100% - 70px) / 3);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.making-purchases .coupon .coupon-discount {
-  font-family: Lato, sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #222222;
-}
-.making-purchases .coupon .coupon-text {
+details a {
   font-family: Lato, sans-serif;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 33px;
   font-weight: 400;
-  color: #000000;
+  color: #6f6e6e;
+  padding-left: 19px;
+  text-decoration: none;
 }
-.making-purchases .payment {
-  color: #575757;
-  width: calc((100% - 70px) / 3);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  background-color: #f5f3f3;
-  padding: 40px;
-  box-sizing: border-box;
-  align-self: flex-start;
+details a:hover {
+  color: #ef5b70;
 }
-.making-purchases .payment .sub-total {
-  font-family: Lato, sans-serif;
-  font-size: 11px;
-  line-height: 1.2;
+details .lorem {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
   font-weight: 400;
-  text-transform: uppercase;
-  color: #575757;
-  padding-bottom: 14px;
-}
-.making-purchases .payment .sub-total span {
-  padding-left: 20px;
-}
-.making-purchases .payment .grand-total {
-  font-family: Lato, sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #222222;
-}
-.making-purchases .payment .grand-total span {
-  padding-left: 20px;
-  color: #f16d7f;
-}
-.making-purchases .payment .line {
-  width: 100%;
-  height: 1px;
-  background-color: #ebebeb;
-  margin-block: 22px 17px;
-}
-.making-purchases .payment .payment-button {
-  width: 100%;
-  height: 50px;
-  background-color: #f16d7f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Lato, sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 700;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.making-purchases .payment .payment-button:hover {
-  box-shadow: 0px 0px 5px 0px #f16d7f;
-  cursor: pointer;
-  background-color: #ffffff;
-  color: #f16d7f;
-}
-.making-purchases .making-input {
-  height: 45px;
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-  padding-inline: 18px 12px;
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 1.2;
-  font-weight: 300;
-  color: #b1b1b1;
-}
-.making-purchases .making-input::-moz-placeholder {
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 1.2;
-  font-weight: 300;
-  color: #b1b1b1;
-}
-.making-purchases .making-input::placeholder {
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  line-height: 1.2;
-  font-weight: 300;
-  color: #b1b1b1;
-}
-.making-purchases .making-input:focus {
-  outline: none;
-  box-shadow: 0px 0px 3px #f16d7f;
-  border: 1px solid #f16d7f;
-  border-radius: 0;
-}
-.making-purchases .making-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 118px;
-  height: 35px;
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-  font-family: Lato, sans-serif;
-  font-size: 11px;
-  line-height: 1.2;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #575757;
-}
-.making-purchases .making-button:hover {
-  cursor: pointer;
-  background-color: #f16d7f;
+  color: #b3b2b2;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */

@@ -78,193 +78,100 @@
       </div>
     </section>
     <section class="section-center">
-      <section class="products-details">
-        <div class="products-details__name">
-          <p class="name-option">Product Details</p>
-          <p class="name-option">Unite Price</p>
-          <p class="name-option">Quantity</p>
-          <p class="name-option">shipping</p>
-          <p class="name-option">Subtotal</p>
-          <p class="name-option">Action</p>
-        </div>
-        <div class="products-details__content one-card">
-          <div class="product-card">
-            <img
-              class="product-card-img"
-              src="./images/foto/jacket-hood.png"
-              alt="guy"
-            />
-            <div class="product-card_descriptions">
-              <p class="name-cardProduct">Mango People T-shirt</p>
-              <div class="color-cardProduct">
-                Color:<span>Red</span>
-              </div>
-              <div class="size-cardProduct">
-                Size:<span>XXL</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-price card-option">
-            <p>$150</p>
-          </div>
-          <div class="product-quantity card-option">
-            <input
-              class="quant"
-              type="number"
-              min="1"
-              placeholder="2"
-              wfd-id="id1"
-            />
-          </div>
-          <div class="product-shipping card-option">
-            <p>FREE</p>
-          </div>
-          <div class="product-subtotal card-option">
-            <p>$300</p>
-          </div>
-          <div class="product-action card-option">
-            <img
-              class="circle-xmark"
-              src="./images/forms/circle-xmark-solid.svg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="products-details__content two-card">
-          <div class="product-card">
-            <img
-              class="product-card-img"
-              src="./images/foto/short-coat.png"
-              alt="guy"
-            />
-            <div class="product-card_descriptions">
-              <p class="name-cardProduct">Mango People T-shirt</p>
-              <div class="color-cardProduct">
-                Color:<span>Red</span>
-              </div>
-              <div class="size-cardProduct">
-                Size:<span>XXL</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-price card-option">
-            <p>$150</p>
-          </div>
-          <div class="product-quantity card-option">
-            <input
-              class="quant"
-              type="number"
-              min="1"
-              placeholder="2"
-              wfd-id="id1"
-            />
-          </div>
-          <div class="product-shipping card-option">
-            <p>FREE</p>
-          </div>
-          <div class="product-subtotal card-option">
-            <p>$300</p>
-          </div>
-          <div class="product-action card-option">
-            <img
-              class="circle-xmark"
-              src="./images/forms/circle-xmark-solid.svg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="products-details__content three-card">
-          <div class="product-card">
-            <img
-              class="product-card-img"
-              src="./images/foto/long-down-jacket.png"
-              alt="guy"
-            />
-            <div class="product-card_descriptions">
-              <p class="name-cardProduct">Mango People T-shirt</p>
-              <div class="color-cardProduct">
-                Color:<span>Red</span>
-              </div>
-              <div class="size-cardProduct">
-                Size:<span>XXL</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-price card-option">
-            <p>$150</p>
-          </div>
-          <div class="product-quantity card-option">
-            <input
-              class="quant"
-              type="number"
-              min="1"
-              placeholder="2"
-              wfd-id="id1"
-            />
-          </div>
-          <div class="product-shipping card-option">
-            <p>FREE</p>
-          </div>
-          <div class="product-subtotal card-option">
-            <p>$300</p>
-          </div>
-          <div class="product-action card-option">
-            <img
-              class="circle-xmark"
-              src="./images/forms/circle-xmark-solid.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      <section class="options-shopping">
-        <div class="button-chopping clear-cart">
-          CLEAR SHOPPING CART
-        </div>
-        <div class="button-chopping end-chopp">CONTINUE sHOPPING</div>
-      </section>
-
-      <section class="making-purchases">
-        <section class="delivery-address">
-          <h3 class="shipping-adress">Shipping Adress</h3>
-          <select class="sity-select">
-            <option value="bangladesh">Bangladesh</option>
-            <option value="russia">Russia</option>
-            <option value="china">China</option>
-            <option value="peru">Peru</option>
-          </select>
-          <input
-            class="making-input state-input"
-            type="text"
-            placeholder="State"
-          />
-          <input
-            class="making-input postcode-input"
-            type="number"
-            min="1"
-            placeholder="Postcode / Zip"
-          />
-          <div class="making-button button-address">get a quote</div>
-        </section>
-        <section class="coupon">
-          <h3 class="coupon-discount">coupon discount</h3>
-          <p class="coupon-text">
-            Enter your coupon code if you have one
+      <details open class="register">
+        <summary>01. Shipping Adress</summary>
+        <form class="guest-register">
+          <h3 class="register_h3">Check as a guest or register</h3>
+          <p class="register_p">
+            Register with us for future convenience
           </p>
-          <input
-            class="making-input coupon-input"
-            type="text"
-            placeholder="State"
-          />
-          <div class="making-button button-coupon">Apply coupon</div>
-        </section>
-        <section class="payment">
-          <p class="sub-total">Sub total <span>$900</span></p>
-          <h3 class="grand-total">GRAND TOTAL <span>$900</span></h3>
-          <div class="line"></div>
-          <div class="payment-button">proceed to checkout</div>
-        </section>
-      </section>
+          <div class="radio">
+            <input type="radio" value="1" id="guest" name="contact" />
+            <label for="guest">checkout as guest</label>
+            <input
+              type="radio"
+              value="2"
+              id="register"
+              name="contact"
+            />
+            <label for="register">register</label>
+          </div>
+          <h3 class="register_h3">register and save time!</h3>
+          <p class="register_p">
+            Register with us for future convenience
+          </p>
+          <a href="#" id="checkout-register"
+            >>> Fast and easy checkout</a
+          >
+          <a href="#" id="access-history"
+            >>> Easy access to your order history and status</a
+          >
+          <div class="button-register">continue</div>
+        </form>
+        <form class="ready-registed">
+          <h3 class="register_h3">Already registed?</h3>
+          <p class="register_p">Please log in below</p>
+          <h4 class="register_h4">EMAIL ADDRESS<span>*</span></h4>
+          <input type="email" name="email" id="email" />
+          <h4 class="register_h4">PASSWORD<span>*</span></h4>
+          <input type="password" name="password" id="password" />
+          <p class="error-text">* Required Fileds</p>
+          <div class="login-end">
+            <div class="button-register">Log in</div>
+            <a id="password-recovery" href="#">Forgot Password ?</a>
+          </div>
+        </form>
+      </details>
+      <details class="billing-information">
+        <summary>02. BILLING INFORMATION</summary>
+        <p class="lorem">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Quisquam, aperiam quo consequatur ratione sint veritatis et
+          quibusdam quia ipsa consectetur delectus magnam facilis
+          eligendi provident praesentium. Dolor facere aliquid
+          accusamus.
+        </p>
+      </details>
+      <details class="shipping-information">
+        <summary>03. SHIPPING INFORMATION</summary>
+        <p class="lorem">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Quisquam, aperiam quo consequatur ratione sint veritatis et
+          quibusdam quia ipsa consectetur delectus magnam facilis
+          eligendi provident praesentium. Dolor facere aliquid
+          accusamus.
+        </p>
+      </details>
+      <details class="shipping-metod">
+        <summary>04. SHIPPING METHOD</summary>
+        <p class="lorem">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Quisquam, aperiam quo consequatur ratione sint veritatis et
+          quibusdam quia ipsa consectetur delectus magnam facilis
+          eligendi provident praesentium. Dolor facere aliquid
+          accusamus.
+        </p>
+      </details>
+      <details class="payment-metod">
+        <summary>05. PAYMENT METHOD</summary>
+        <p class="lorem">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Quisquam, aperiam quo consequatur ratione sint veritatis et
+          quibusdam quia ipsa consectetur delectus magnam facilis
+          eligendi provident praesentium. Dolor facere aliquid
+          accusamus.
+        </p>
+      </details>
+      <details class="order-review">
+        <summary>06. ORDER REVIEW</summary>
+        <p class="lorem">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Quisquam, aperiam quo consequatur ratione sint veritatis et
+          quibusdam quia ipsa consectetur delectus magnam facilis
+          eligendi provident praesentium. Dolor facere aliquid
+          accusamus.
+        </p>
+      </details>
     </section>
     <section class="section-subscribe">
       <div class="section-subscribe__fon">
