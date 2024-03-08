@@ -1,0 +1,106 @@
+.section-subscribe {
+  height: 438px;
+  background-image: url(./images/foto/fonTwo.png);
+  background-size: cover;
+  &__fon {
+    background-color: rgba(242, 242, 242, 0.5);
+    height: 100%;
+    width: 100%;
+    @include centerFlex;
+  }
+
+  .greetings {
+    width: 50%;
+    padding-left: 230px;
+    display: flex;
+    gap: 28px;
+    padding-right: 72px;
+    img {
+      width: 83px;
+      height: 83px;
+    }
+    &__text {
+      &__main-text {
+        @include fontSource(16px, 26px, 400, 0.025em);
+        font-style: italic;
+        color: $colorContentOne;
+      }
+      &__name {
+        @include fontSource(16px, 26px, 700, 0.025em);
+        color: $colorContentTwo;
+        padding-top: 19px;
+      }
+      &__address {
+        @include fontSource(12px, 14px, 300, 0.025em);
+        color: $colorContentOne;
+        padding-bottom: 41px;
+      }
+      &__rectangles {
+        display: flex;
+        gap: 13px;
+        .rect {
+          width: 38px;
+          height: 4px;
+          background-color: $colorFonThree;
+        }
+        .red {
+          background-color: $colorContentTwo;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .input-email {
+    width: 50%;
+    padding-right: 230px;
+    @include centerFlex;
+    flex-direction: column;
+    gap: 32px;
+    &__text {
+      text-align: center;
+      h3 {
+        @include fontSource(24px, 54px, 400, 0.025em);
+        text-transform: uppercase;
+        color: $colorContentOne;
+      }
+      p {
+        @include fontSource(14px, 1.2, 600, 0.025em);
+        text-transform: none;
+      }
+    }
+    &__input {
+      height: 46px;
+      @include centerFlex;
+      .email {
+        height: 100%;
+        border-radius: 23px 0px 0px 23px;
+        width: 256px;
+        background-color: #e1e1e1;
+        border: none;
+        &::placeholder {
+          opacity: 0.67;
+          @include fontSource(14px, 1.2, 600, 0.025em);
+          color: $colorContentOne;
+          padding-left: 22px;
+        }
+      }
+      .subscribe-button {
+        @include centerFlex;
+        height: 100%;
+        border-radius: 0px 23px 23px 0px;
+        width: 100px;
+        @include fontSource(14px, 1.2, 400, 0.025em);
+        color: $colorContentThree;
+        border: none;
+        background-color: $colorContentTwo;
+        &:hover {
+          color: $colorContentTwo;
+          background-color: $colorFonOne;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

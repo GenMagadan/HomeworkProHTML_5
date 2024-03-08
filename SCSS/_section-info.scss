@@ -1,0 +1,53 @@
+.section-info {
+  padding: 123px 230px 89px;
+  background-color: $colorFonOne;
+  display: flex;
+  gap: 64px;
+  .announced {
+    min-width: 427px;
+    &__brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      img {
+        width: 59px;
+        height: 51px;
+      }
+      &-text {
+        @include fontSource(27px, 32px, 300, 0.025em);
+        text-transform: uppercase;
+        color: #222222;
+        span {
+          @include fontSource(27px, 32px, 900, 0.025em);
+          text-transform: uppercase;
+          color: $colorContentTwo;
+        }
+      }
+    }
+    &__text {
+      @include fontSource(14px, 24px, 400, 0.025em);
+      color: $colorContentSeven;
+      padding-top: 29px;
+    }
+  }
+  &__type {
+    display: flex;
+    &-list {
+      h3 {
+        @include fontSource(18px, 26px, 700, 0.025em);
+        color: $colorContentTwo;
+        padding-right: 129px;
+        padding-bottom: 42px;
+        white-space: nowrap;
+      }
+      li {
+        list-style-type: none;
+        a {
+          @include fontSource(16px, 42px, 400, 0.025em);
+          color: $colorContentSeven;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

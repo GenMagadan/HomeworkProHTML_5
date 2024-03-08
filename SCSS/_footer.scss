@@ -1,0 +1,37 @@
+footer {
+  height: 79px;
+  background-color: $colorFonThree;
+  padding-inline: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    @include fontSource(16px, 42px, 400, 0.025em);
+    color: #7a7a7a;
+  }
+  .social-icon {
+    display: flex;
+    gap: 8px;
+    .square {
+      width: 32px;
+      height: 32px;
+      background-color: $colorFonOne;
+      @include centerFlex;
+      img {
+        width: 16px;
+        height: 16px;
+        filter: brightness(0) saturate(100%) invert(80%) sepia(0%)
+          saturate(2830%) hue-rotate(52deg) brightness(104%)
+          contrast(59%);
+      }
+      &:hover {
+        background-color: $colorContentTwo;
+        img {
+          filter: brightness(0) saturate(100%) invert(98%) sepia(69%)
+            saturate(1%) hue-rotate(21deg) brightness(113%)
+            contrast(101%);
+        }
+      }
+    }
+  }
+}
