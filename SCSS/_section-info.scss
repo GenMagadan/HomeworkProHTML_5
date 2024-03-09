@@ -1,12 +1,22 @@
 .section-info {
+  display: flex;
   padding: 123px 230px 89px;
-  display: grid;
-  grid-template-columns: 490px repeat(3, 1fr);
   background-color: #ffffff;
+  justify-content: space-between;
   box-sizing: border-box;
 }
+@supports (display: grid) {
+  .section-info {
+    display: grid;
+    padding: 123px 230px 89px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    gap: 30px;
+    grid-template-columns: 490px repeat(3, 1fr);
+  }
+}
+
 .announced {
-  min-width: 427px;
   &__brand {
     display: flex;
     align-items: center;
@@ -27,7 +37,7 @@
     }
   }
   &__text {
-    width: 426px;
+    width: 440px;
     @include fontSource(14px, 24px, 400, 0.025em);
     color: $colorContentSeven;
     padding-top: 29px;
@@ -37,7 +47,6 @@
   h3 {
     @include fontSource(18px, 26px, 700, 0.025em);
     color: $colorContentTwo;
-    padding-right: 129px;
     padding-bottom: 42px;
     white-space: nowrap;
   }
